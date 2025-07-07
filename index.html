@@ -44,6 +44,9 @@
       box-shadow: none;
       border: 1px solid #ccc;
     }
+    .navbar-transparent {
+      background-color:blanchedalmond
+    }
 
     @media (max-width: 768px) {
       .section-title {
@@ -55,23 +58,24 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Geia</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
-          <li class="nav-item"><a class="nav-link" href="#phygital">Phygital Media</a></li>
-          <li class="nav-item"><a class="nav-link" href="#steps">How It Works</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100" style="background-color: transparent; z-index: 10;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Geia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+        <li class="nav-item"><a class="nav-link" href="#phygital">Phygital Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="#steps">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
   <!-- Hero Section with Background Video -->
   <section class="position-relative text-white text-center">
     <video autoplay muted loop playsinline class="w-100 vh-100 object-fit-cover position-absolute top-0 start-0" style="z-index: -1;">
