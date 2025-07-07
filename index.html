@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Geia | Phygital Marketing</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    .text-shadow {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .btn-custom {
+      padding: 12px 25px;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #222;
+    }
+
+    footer input, footer textarea {
+      border-radius: 0;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Geia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+          <li class="nav-item"><a class="nav-link" href="#phygital">Phygital Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="#steps">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section with Background Video -->
+  <section class="position-relative text-white text-center">
+    <video autoplay muted loop playsinline class="w-100 vh-100 object-fit-cover position-absolute top-0 start-0" style="z-index: -1;">
+      <source src="hero.mp4" type="video/mp4" />
+    </video>
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6; z-index: 0;"></div>
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100 position-relative" style="z-index: 1;">
+      <h1 class="display-4 fw-bold">The Real World Is Your Next Marketing Channel.</h1>
+      <p class="lead mt-3 mb-4">Geia turns everyday environments into phygital brand experiences.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="btn btn-dark btn-custom">Request Early Access</a>
+        <a href="#" class="btn btn-dark btn-custom">Partner with Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section id="intro" class="section bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-shadow">Intro</h2>
+      <p class="lead text-muted mb-5">
+        Geia helps brands escape the noise of digital advertising and connect where it matters most — in the physical world.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card p-4 rounded shadow-sm text-center">
+            <div class="display-5 mb-2">⚡</div>
+            <p class="text-muted fw-semibold">Unskippable Brand Moments</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card p-4 rounded shadow-sm text-center">
+            <div class="display-5 mb-2">🌍</div>
+            <p class="text-muted fw-semibold">Phygital Distribution Across Real Environments</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card p-4 rounded shadow-sm text-center">
+            <div class="display-5 mb-2">📊</div>
+            <p class="text-muted fw-semibold">QR & Digital Integration for Trackable Engagement</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card p-4 rounded shadow-sm text-center">
+            <div class="display-5 mb-2">🔐</div>
+            <p class="text-muted fw-semibold">Stealth Format — No One Else Will Know What You're Doing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phygital Media Section -->
+  <section id="phygital" class="section bg-white text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-shadow">What Is Phygital Media?</h2>
+      <p class="lead text-muted">
+        Phygital means Physical + Digital — a powerful fusion that transforms everyday environments into interactive brand platforms.
+      </p>
+      <ul class="text-start mt-4 text-secondary list-unstyled">
+        <li>• People trust what they touch</li>
+        <li>• Physical interaction = emotional memory</li>
+        <li>• QR and AR bridge the offline/online world</li>
+        <li>• Conversion happens at the moment of attention</li>
+      </ul>
+      <div class="card p-4 mt-4 shadow-sm mx-auto" style="max-width: 600px;">
+        <h5 class="fw-bold mb-3">📊 Behavioral Insights</h5>
+        <ul class="text-start text-secondary list-unstyled">
+          <li>✔️ 82% trust physical over digital ads</li>
+          <li>✔️ 65% scan codes more than click banners</li>
+          <li>✔️ 91% of digital ads are ignored</li>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <a href="#" class="btn btn-dark btn-custom">Explore How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section id="steps" class="section bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-shadow">From Idea to Impact in 4 Steps</h2>
+      <div class="text-start mb-4" data-aos="fade-left">
+        <h4 class="fw-bold text-dark">Step 1: Define Your Audience & Context</h4>
+        <p class="ms-3 text-secondary">Who do you want to reach? Where do they go? What do they feel?</p>
+      </div>
+      <div class="text-start mb-4" data-aos="fade-left">
+        <h4 class="fw-bold text-dark">Step 2: Craft Your Message</h4>
+        <p class="ms-3 text-secondary">We work with you to create a physical + digital brand moment designed for action.</p>
+      </div>
+      <div class="text-start mb-4" data-aos="fade-left">
+        <h4 class="fw-bold text-dark">Step 3: Activate the Touchpoint</h4>
+        <p class="ms-3 text-secondary">We deploy it across curated real-world environments: cafes, colleges, gyms, events, more.</p>
+      </div>
+      <div class="text-start mb-4" data-aos="fade-left">
+        <h4 class="fw-bold text-dark">Step 4: Track Engagement & Performance</h4>
+        <p class="ms-3 text-secondary">See scans, clicks, reach, and conversion data — in real time.</p>
+      </div>
+      <p class="text-secondary mt-4">Geia manages your phygital media end-to-end. You focus on your message. We handle distribution, placement, and measurable ROI.</p>
+      <div class="mt-4">
+        <a href="#" class="btn btn-dark btn-custom">Let’s Launch Your Campaign</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-white text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-shadow">About Geia</h2>
+      <p class="lead text-muted">
+        We believe in brand moments, not just impressions.<br>
+        We believe the real world is your most underused asset.<br>
+        And we believe that phygital is the next ad revolution.
+      </p>
+      <p class="text-secondary mt-3">
+        Founded in stealth mode, Geia is redefining how, where, and why brands connect with people.
+      </p>
+      <div class="mt-4">
+        <a href="#" class="btn btn-dark btn-custom">Join the Movement</a>
+        <a href="#" class="btn btn-dark btn-custom">Let’s Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section Anchor -->
+  <section id="contact" class="section bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-shadow">Contact Us</h2>
+      <p class="lead text-muted">We’d love to hear from you. Fill out the form below to get in touch.</p>
+    </div>
+  </section>
+
+  <!-- Footer with Contact Form -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4 class="text-uppercase">Geia</h4>
+          <p>Your bridge between the physical and digital world of brand marketing.</p>
+          <p>© 2025 Geia. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-uppercase mb-3">Contact Form</h5>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light btn-custom">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+  </script>
+</body>
+</html>
